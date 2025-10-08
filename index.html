@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dzine wala | Designs brewed with story & soul</title>
+    <meta name="description"
+        content="dzine wala is a creative studio from Indore, India, specializing in visual identity, posters, and creative storytelling with a touch of desi pop culture.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts: Poppins & Satoshi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Load Lucide from CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script src="./js/twconfig.js"></script>
+
+    <!-- CSS Variables for Theming -->
+    <link rel="stylesheet" href="./css/themes.css">
+</head>
+
+<body class="bg-background text-text-primary antialiased">
+
+    <!-- PRELOADER -->
+    <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-background z-50 text-center">
+        <img src="./images/logo.png" alt="logo-preloader" class="h-24 w-auto rounded-full">
+        <p id="loaderText" class="text-orange-500 text-lg font-semibold"></p>
+        <div class="mt-3 flex space-x-1">
+            <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+            <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+            <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce"></div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav
+            class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl bg-[var(--bg-color)] filter opacity-80 rounded-full mt-5 backdrop-blur-lg border-b border-border-color transition-colors duration-300">
+            <a href="#" class="font-heading font-extrabold text-2xl text-text-primary">
+                dzine<span class="text-accent-primary">.</span>wala
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors">About</a>
+                <a href="#work"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors">Work</a>
+                <a href="#services"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors">Services</a>
+                <a href="#contact"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors">Contact</a>
+            </div>
+            <div id="mobileMenu"
+                class="hidden flex flex-col px-4 py-5 bg-white/80 dark:bg-black/60 md:hidden absolute top-16 left-0 w-full items-center gap-2">
+                <a href="#about"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors w-full text-center hover:bg-gray-200 ">About</a>
+                <a href="#work"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors w-full text-center hover:bg-gray-200">Work</a>
+                <a href="#services"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors w-full text-center hover:bg-gray-200">Services</a>
+                <a href="#contact"
+                    class="font-body font-semibold text-text-primary hover:text-accent-primary transition-colors w-full text-center hover:bg-gray-200">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle"
+                    class="text-2xl w-8 h-8 rounded-full flex items-center justify-center hover:bg-border-color transition-colors">
+                    <!-- Icon will be inserted by JS -->
+                </button>
+                <button id="hamburger" class="md:hidden text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home"
+            class="relative min-h-screen flex items-center justify-center text-center px-6 pt-24 overflow-hidden bg-[var(--bg-color)]">
+
+            <!-- Optional overlay if you want extra dim -->
+            <div class="absolute inset-0 bg-black/20"></div>
+
+            <div class="back">
+                <div class="container">
+                    <h1 class="relative z-9 inset-0" arial-label="dzine_wal@"></h1>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative max-w-4xl mx-auto z-10">
+                <h1 class="font-heading font-extrabold text-3xl sm:text-5xl md:text-7xl leading-tight text-shadow">
+                    The <span
+                        class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">Finest
+                        Sh*yt</span> designs ever ...
+                </h1>
+                <p class="font-body text-lg md:text-xl mt-6 max-w-2xl mx-auto text-white/70">
+                    Visual identity, posters, AI videos and creative storytelling
+                </p>
+                <a href="#contact"
+                    class="mt-10 inline-block bg-accent-primary text-white dark:text-gray-900 font-heading font-bold py-4 px-10 rounded-lg shadow-lg hover:scale-105 hover:shadow-accent-primary/40 transition-transform transform-gpu">
+                    Let's Work Together
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 md:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div
+                        class="w-full h-80 md:h-96 bg-border-color rounded-xl flex items-center justify-center shadow-lg">
+                        <img src="./images/about.png" alt="A photo of the designer"
+                            class="w-full h-full object-cover rounded-lg shadow-lg">
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <h2 class="font-heading font-bold text-3xl md:text-4xl">Hey, I'm <span
+                                class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">Yuvraj...</span>
+                        </h2>
+                        <p class="mt-6 text-lg text-text-primary/80">
+                            ...the creative mind behind dzine wala. Based in Dewas, I craft visual experiences that feel
+                            both global and deeply rooted in Indian culture. I'm inspired by the vibrant chaos of our
+                            cinema, the bold typography on old trucks, and the endless stories our streets tell.
+                        </p>
+                        <div class="mt-8 bg-card-bg border border-border-color p-6 rounded-lg text-left">
+                            <h4 class="font-heading font-bold text-lg text-accent-secondary">Why 'dzine wala'?</h4>
+                            <p class="mt-2 text-text-primary/70">In India, a 'wala' is a trusted local expert. I wanted
+                                to bring that same reliability and passion to design. Think of me as your friendly
+                                neighbourhood design specialist!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services section -->
+
+        <section id="services" class="py-20 md:px-10 sm:py-28">
+            <div class="container mx-auto px-6 lg:px-8">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-[var(--text-color)] sm:text-4xl">Our Creative
+                        Services</h2>
+                    <p class="mt-4 text-lg text-primary">
+                        Explore the possibilities we can unlock for your brand, from stunning visuals to complete
+                        digital strategies.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <div class="relative rounded-xl shadow-2xl overflow-hidden group bg-indigo-600">
+                        <div class="absolute inset-0"
+                            style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cpath d='M14 0 L14 28 M0 14 L28 14' stroke='%23818cf8' stroke-width='1'/%3E%3C/svg%3E&quot;); background-size: 28px 28px;">
+                        </div>
+
+                        <div class="relative z-10 p-8 flex flex-col h-full text-white">
+                            <h3 class="text-2xl font-bold">Poster Design</h3>
+                            <p class="mt-2 font-semibold text-cyan-300">Art That Speaks Loudly</p>
+                            <p class="mt-4 text-indigo-100 flex-grow">
+                                From minimalist art to vibrant event promotions, we design impactful posters that
+                                capture attention and convey your message instantly.
+                            </p>
+                            <a href="#gallary"
+                                class="inline-block mt-6 bg-accent-secondary font-bold text-center px-6 py-2 rounded-lg hover:bg-cyan-500 transition-colors duration-300 w-fit">
+                                View Designs
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-xl shadow-2xl overflow-hidden group bg-emerald-600">
+                        <div class="absolute inset-0"
+                            style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236ee7b7' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E&quot;);">
+                        </div>
+
+                        <div class="relative z-10 p-8 flex flex-col h-full text-white">
+                            <h3 class="text-2xl font-bold">AI Powered Videos</h3>
+                            <p class="mt-2 font-semibold text-teal-300">The Future of Motion</p>
+                            <p class="mt-4 text-emerald-100 flex-grow">
+                                Harnessing generative AI to produce mesmerizing video content, from dynamic logo reveals
+                                to unique social media shorts.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-6 bg-accent-secondary font-bold text-center px-6 py-2 rounded-lg hover:bg-teal-500 transition-colors duration-300 w-fit">
+                                Watch Reel
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-xl shadow-2xl overflow-hidden group bg-purple-600">
+                        <div class="absolute inset-0"
+                            style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a78bfa' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E&quot;);">
+                        </div>
+
+                        <div class="relative z-10 p-8 flex flex-col h-full text-white">
+                            <h3 class="text-2xl font-bold">Digital Branding</h3>
+                            <p class="mt-2 font-semibold text-violet-300">Crafting Your Identity</p>
+                            <p class="mt-4 text-purple-100 flex-grow">
+                                We build cohesive brand identities, from memorable logos to a consistent style guide,
+                                ensuring your digital presence is strong and unified.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-6 bg-accent-secondary font-bold text-center px-6 py-2 rounded-lg hover:bg-violet-500 transition-colors duration-300 w-fit">
+                                Explore Brands
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative rounded-xl shadow-2xl overflow-hidden group bg-rose-600">
+                        <div class="absolute inset-0"
+                            style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23fda4af' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E&quot;);">
+                        </div>
+
+                        <div class="relative z-10 p-8 flex flex-col h-full text-white">
+                            <h3 class="text-2xl font-bold">Web UI Design</h3>
+                            <p class="mt-2 font-semibold text-pink-300">Interactive Experiences</p>
+                            <p class="mt-4 text-rose-100 flex-grow">
+                                Designing pixel-perfect, intuitive, and beautiful interfaces for websites that provide
+                                an engaging and effortless user experience.
+                            </p>
+                            <a href="#"
+                                class="inline-block mt-6 bg-accent-secondary font-bold text-center px-6 py-2 rounded-lg hover:bg-pink-500 transition-colors duration-300 w-fit">
+                                See Mockups
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section id="work" class="py-20 md:py-32 bg-card-bg border-y border-border-color fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="font-heading font-bold text-3xl md:text-4xl">Selected Work</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-text-primary/70">A glimpse into brand stories I've helped
+                        bring to life.</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?w=800"
+                            alt="Cafe Branding Project"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div
+                            class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            <h3 class="font-heading font-bold text-xl">Gth Exports</h3>
+                            <p class="font-body text-sm">Brand Identity & UI</p>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="./images/ai-vid.png" alt="Social Media Project"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div
+                            class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            <h3 class="font-heading font-bold text-xl">Ai powered videos</h3>
+                            <p class="font-body text-sm">Social Media</p>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                        <img src="./images/MOONLIT.jpg" alt="Poster Design Project"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div
+                            class="absolute bottom-0 left-0 p-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            <h3 class="font-heading font-bold text-xl">Moonlit: Freasher's Party</h3>
+                            <p class="font-body text-sm">Poster Designs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI VIDEO SECTION -->
+        <section id="ai-benefits-pro" class="bg-[var(--bg-color)] text-[var(--text-color)] py-20 sm:py-28">
+            <div class="container max-w-7xl mx-auto px-6 lg:px-8">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
+
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
+                            A Symphony of Pixels, <span
+                                class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">
+                                Powered
+                                by AI</span>
+                        </h2>
+                        <p class="mt-4 text-lg text-primary">
+                            Go beyond the ordinary. I harness generative AI to craft visual experiences that captivate
+                            and convert. From initial concept to final render, this modern approach ensures speed,
+                            creativity, and unparalleled results.
+                        </p>
+
+                        <div class="mt-10 space-y-8">
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-accent-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-zap-icon lucide-zap">
+                                            <path
+                                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4 text-left">
+                                    <h3 class="text-lg font-semibold">Rapid Prototyping & Delivery</h3>
+                                    <p class="mt-1 --text-color">Generate concepts and variations in minutes, not days,
+                                        getting the final product to you faster than ever.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <div
+                                        class="flex items-center justify-center h-12 w-12 rounded-md bg-gray-700 text-accent-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-sparkles-icon lucide-sparkles">
+                                            <path
+                                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                                            <path d="M20 2v4" />
+                                            <path d="M22 4h-4" />
+                                            <circle cx="4" cy="20" r="2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-4 text-left">
+                                    <h3 class="text-lg font-semibold">Limitless Creative Horizons</h3>
+                                    <p class="mt-1 --text-color">Create surreal landscapes and impossible animations
+                                        that are limited only by your imagination.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="inline-block mt-6 bg-accent-secondary font-bold text-center px-6 py-2 rounded-lg hover:bg-violet-500 transition-colors duration-300 w-fit">
+                            Create custom AI ad
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-center min-h-[450px] lg:min-h-0">
+                        <div class="relative w-full max-w-[300px] flex items-center justify-center">
+
+                            <div
+                                class="hidden lg:block absolute w-full h-full transform -translate-x-1/2 -rotate-12 scale-90">
+                                <div
+                                    class="relative bg-black w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-700">
+                                    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted
+                                        playsinline>
+                                        <source src="./videos/ai 4.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div
+                                class="hidden lg:block absolute w-full h-full transform translate-x-1/2 rotate-12 scale-90">
+                                <div
+                                    class="relative bg-black w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-700">
+                                    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted
+                                        playsinline>
+                                        <source src="./videos/ai1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div class="relative z-10 w-full">
+                                <div
+                                    class="relative bg-black aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-700">
+                                    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted
+                                        playsinline>
+                                        <source src="./videos/ai 2.mp4" type="video/mp4">
+                                    </video>
+
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20">
+                                    </div>
+
+                                    <div class="relative z-10 h-full flex flex-col justify-end p-4 text-white">
+                                        <div class="flex absolute top-0 w-full justify-between p-5 left-0">
+                                            <div>Reels</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-camera-icon lucide-camera">
+                                                <path
+                                                    d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" />
+                                                <circle cx="12" cy="13" r="3" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex items-end">
+                                            <div class="flex-grow">
+                                                <div class="flex items-center gap-2">
+                                                    <img src="https://i.pravatar.cc/150?u=dzineWala"
+                                                        alt="Profile Picture"
+                                                        class="w-8 h-8 rounded-full border-2 border-white">
+                                                    <span class="font-bold text-sm">@dzine_wala_</span>
+                                                </div>
+                                                <p class="text-sm mt-2 leading-tight">Crafting a new world with AI. This
+                                                    entire scene was generated from a simple text prompt... <span
+                                                        class="text-gray-400">more</span></p>
+                                            </div>
+
+                                            <div class="flex flex-col items-center space-y-5 ml-4">
+                                                <div class="flex flex-col items-center"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-8 h-8">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                                    </svg><span class="text-xs font-bold mt-1">12.3k</span></div>
+                                                <div class="flex flex-col items-center"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="w-8 h-8">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                                    </svg><span class="text-xs font-bold mt-1">452</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLARY SECTION -->
+        <section id="gallary" class="py-20 sm:py-28 bg-gray-200/50 dark:bg-background text-primary">
+            <div class="container mx-auto px-6 lg:px-8 py-10"
+                style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cpath d='M14 0 L14 28 M0 14 L28 14' stroke='%23818cf8' stroke-width='0.2'/%3E%3C/svg%3E&quot;); background-size: 28px 28px;">
+
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                        A Glimpse of Our Work
+                    </h2>
+                    <p class="mt-4 text-lg text-secondary">
+                        We believe in design that communicates, captivates, and converts. Here’s a selection of our
+                        favorite projects that showcase our passion for creativity.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 md:px-20">
+
+                    <div class="flex flex-col gap-4 md:gap-8">
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal1.png"
+                                alt="Abstract design project with pink and blue colors">
+                        </div>
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal2.png"
+                                alt="3D render of geometric shapes in pastel colors">
+                        </div>
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full h-[260px] object-cover clickable-image" src="./images/gal9.png"
+                                alt="3D render of geometric shapes in pastel colors">
+                        </div>
+                    </div>
+
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="fullImage">
+                    </div>
+
+                    <div class="flex flex-col gap-4 md:gap-8">
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal3.png"
+                                alt="Creative typography design with a face">
+                        </div>
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal6.png"
+                                alt="Colorful magazine cover layout design">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 md:gap-8">
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal5.png"
+                                alt="Social media branding for a music app">
+                        </div>
+                        <div
+                            class="rounded-xl overflow-hidden shadow-lg group transform hover:scale-105 hover:shadow-2xl transition-transform duration-300 max-h-[200px] w-[]">
+                            <img class="w-full object-cover clickable-image" src="./images/gal4.png"
+                                alt="Fluid abstract 3D art with blue and white colors">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 md:py-32 bg-card-bg border-t border-border-color fade-in-section">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-heading font-bold text-3xl md:text-4xl">Let’s create something unforgettable!</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-text-primary/70">Have a project, a wild idea, or just want to talk
+                    about design? My inbox is open.</p>
+
+                <div class="mt-12 max-w-xl mx-auto">
+                    <form id="contactForm" class="space-y-6">
+                        <input type="text" placeholder="Your Name" name="from_name"
+                            class="w-full p-4 bg-background border border-border-color rounded-lg focus:ring-2 focus:ring-accent-primary outline-none transition-shadow"
+                            required>
+                        <input type="email" placeholder="Your Email" name="from_email"
+                            class="w-full p-4 bg-background border border-border-color rounded-lg focus:ring-2 focus:ring-accent-primary outline-none transition-shadow"
+                            required>
+                        <textarea placeholder="Tell me about your project..." rows="5" name="message"
+                            class="w-full p-4 bg-background border border-border-color rounded-lg focus:ring-2 focus:ring-accent-primary outline-none transition-shadow"
+                            required></textarea>
+                        <button type="submit"
+                            class="w-full bg-accent-primary text-white dark:text-gray-900 font-heading font-bold py-4 px-10 rounded-lg shadow-lg hover:scale-105 hover:shadow-accent-primary/40 transition-transform transform-gpu">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="mt-16 flex justify-center items-center space-x-6">
+                    <a href="https://www.instagram.com/dzine_wala/" target="_blank"
+                        class="text-text-primary/60 hover:text-accent-primary transition-colors">Instagram<br /><span
+                            class="text-secondary">dzine_wal@</span></a>
+                    <a href="mailto:yuvrajsingh3641@gamil.com"
+                        class="text-text-primary/60 hover:text-accent-primary transition-colors">Email<br /><span
+                            class="text-secondary">yuvrajsingh3641@gamil.com</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-background py-10">
+        <div class="container mx-auto px-6 text-center text-text-primary/60">
+            <a href="#" class="font-heading font-extrabold text-xl text-text-primary/80">
+                dzine<span class="text-accent-primary">.</span>wala
+            </a>
+            <p class="mt-4 text-sm">Made with chai &#127861 & creativity in Indore, India 🇮🇳</p>
+            <p class="text-xs mt-2">&copy; 2025 dzine wala. All Rights Reserved.</p>
+            <p class="text-xs mt-1">Current as of October 5, 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide (required)
+        lucide.createIcons();
+    </script>
+
+    <script src="./js/hamburgerToggle.js"></script>
+    <script src="./js/themeToggle.js"></script>
+    <script src="./js/imageCard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/email.js"></script>
+    <script src="./js/preloader.js"></script>
+</body>
+
+</html>

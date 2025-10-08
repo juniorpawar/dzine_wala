@@ -1,0 +1,50 @@
+:root {
+    /* Light Mode */
+    --bg-color: #F9F7F3;
+    --text-color: #212121;
+    --accent-primary: #FF9933;
+    --accent-secondary: #FF6B6B;
+    --card-bg: #FFFFFF;
+    --border-color: #EAEAEA;
+}
+
+.dark {
+    /* Dark Mode */
+    --bg-color: #1A1A1A;
+    --text-color: #EAEAEA;
+    --accent-primary: #48D1CC;
+    --accent-secondary: #FF9933;
+    --card-bg: #252525;
+    --border-color: #333333;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Style for scroll-triggered animations */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 2px var(--accent-secondary);
+}
+
+.text-shadow-lg {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-white {
+    text-shadow: 3px 3px 0px rgb(0, 0, 0);
+}
