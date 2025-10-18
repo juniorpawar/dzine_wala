@@ -26,12 +26,19 @@
 
     <!-- CSS Variables for Theming -->
     <link rel="stylesheet" href="./css/themes.css">
+
+    <style>
+        .bg-texture {
+            background: url('./images/colored-surface-with-rough-texture.jpg') repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body class="bg-background text-text-primary antialiased">
 
     <!-- PRELOADER -->
-    <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-background z-50 text-center">
+    <!-- <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-background z-50 text-center">
         <img src="./images/logo.png" alt="logo-preloader" class="h-24 w-auto rounded-full">
         <p id="loaderText" class="text-orange-500 text-lg font-semibold"></p>
         <div class="mt-3 flex space-x-1">
@@ -39,7 +46,7 @@
             <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
             <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce"></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- HEADER -->
     <header class="fixed top-0 left-0 w-full z-50">
@@ -100,9 +107,11 @@
             <!-- Content -->
             <div class="relative max-w-4xl mx-auto z-10">
                 <h1 class="font-heading font-extrabold text-3xl sm:text-5xl md:text-7xl leading-tight text-shadow">
-                    The <span
-                        class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">Finest
-                        Sh*yt</span> designs ever ...
+                    The
+                    <span
+                        class="text-[var(--accent-primary)] text-shadow-white bg-texture px-2 rounded-lg text-6xl md:text-auto block md:inline">Finest
+                        Sh*yt</span>
+                    designs ever ...
                 </h1>
                 <p class="font-body text-lg md:text-xl mt-6 max-w-2xl mx-auto text-white/70">
                     Visual identity, posters, AI videos and creative storytelling
@@ -120,10 +129,9 @@
         <section id="about" class="py-20 md:py-32 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    <div
-                        class="w-full h-80 md:h-96 bg-border-color rounded-xl flex items-center justify-center shadow-lg">
-                        <img src="./images/about.png" alt="A photo of the designer"
-                            class="w-full h-full object-cover rounded-lg shadow-lg">
+                    <div class="md:h-[80%] bg-border-color rounded-xl flex items-center justify-center shadow-lg">
+                        <img src="./images/2.png" alt="profile-img"
+                            class="w-full h-full object-cover rounded-lg shadow-lg grayscale transition duration-300 hover:grayscale-0">
                     </div>
                     <div class="text-center lg:text-left">
                         <h2 class="font-heading font-bold text-3xl md:text-4xl">Hey, I'm <span
@@ -134,7 +142,47 @@
                             both global and deeply rooted in Indian culture. I'm inspired by the vibrant chaos of our
                             cinema, the bold typography on old trucks, and the endless stories our streets tell.
                         </p>
-                        <div class="mt-8 bg-card-bg border border-border-color p-6 rounded-lg text-left">
+
+                        <div class="mt-6 md:text-left">
+                            <a href="https://www.instagram.com/dzine_wala/" target="_blank"
+                                class="px-4 py-3 rounded-full mr-4 shadow-lg font-semibold text-white"
+                                style="background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);">
+                                <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-instagram-icon lucide-instagram">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                </svg>
+                                instagram
+                            </a>
+                            <a href="mailto:yuvrajsingh3641@gmail.com" target="_blank"
+                                class="px-4 py-3 bg-accent-primary rounded-full mr-4 shadow-lg font-semibold text-white"
+                                style="background: linear-gradient(45deg, #515bd4 ,#8134af);">
+                                <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-mail-icon lucide-mail">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+                                email
+                            </a>
+                            <a href="#ai-benefits-pro"
+                                class="mt-5 inline-block px-4 py-2 rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 shadow-lg"
+                                style="background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)); color: #fff;">
+                                <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-paperclip-icon lucide-paperclip">
+                                    <path
+                                        d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551" />
+                                </svg>
+                                View My Work
+                            </a>
+                        </div>
+                        <div class="mt-8 bg-card-bg border border-border-color p-6 rounded-lg text-left shadow-2xl">
                             <h4 class="font-heading font-bold text-lg text-accent-secondary">Why 'dzine wala'?</h4>
                             <p class="mt-2 text-text-primary/70">In India, a 'wala' is a trusted local expert. I wanted
                                 to bring that same reliability and passion to design. Think of me as your friendly
@@ -297,7 +345,9 @@
                     <div class="text-center lg:text-left">
                         <h2 class="text-2xl font-bold tracking-tight sm:text-5xl">
                             A Symphony of Pixels, <br>
-                            <span class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">Powered by AI</span>
+                            <span
+                                class="text-[var(--accent-primary)] text-shadow-white bg-accent-secondary px-2 rounded-lg">Powered
+                                by AI</span>
                         </h2>
                         </h2>
                         <p class="mt-4 text-lg text-primary">
