@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Horse Portrait",
+    "description": "High contrast editorial style",
+    "image": "./images/assets/asset01.jpg",
+    "prompt": "Make a high contrast image of the given sitting on a black horse. The shortest taken from right angle of the horse and the man the man is looking towards the neck of the horse putting one arm on his body. In the background just behind the man and the horse is a wild flame caused on a house. The lighting is evening and a bit dull.the image is grained",
+    "instagramUrl": "https://www.instagram.com/dzine_wala/",
+    "aosDelay": 100
+  },
+  {
+    "id": 2,
+    "title": "GTA style Poster",
+    "description": "Modern 3D geometric design",
+    "image": "./images/assets/asset02.png",
+    "prompt": "GTA-style cinematic poster, portrait aspect ratio. Shah Rukh Khan inspired by his look from the movie Don as the main subject, illustrated in a Grand Theft Auto poster art style with bold outlines, semi-realistic painting, dramatic lighting, and stylized realism. He is standing on the side of a city road, leaning slightly against a classic vintage car with an old-school, retro aesthetic. His posture is relaxed, swaggy, and confident. One arm (the arm facing the camera) is inside his pants pocket, while the other hand is holding a lit cigarette. He is facing towards the left, with only his left profile visible to the camera. He is wearing dark shades / goggles, sharp outfit, and exudes calm dominance. The camera angle is slightly from the left side, revealing a stylized city landscape in the background—urban buildings, palm trees lining the road, and streetlights along the walkway on both sides. The overall mood is chill evening vibes, warm dusk lighting, cinematic atmosphere. Behind the city landscape, add a very large, faded overlay close-up of Shah Rukh Khan’s face, occupying most of the background. This background face is wearing the same shades/goggles as the main subject, has a visible red tint, and is facing the opposite direction (right) compared to the main subject. The background face should appear subtle, dramatic, and integrated into the skyline—faded, semi-transparent, powerful, adding depth and intensity. High contrast lighting, neon highlights, cinematic shadows, GTA loading-screen style composition, ultra-detailed illustration, stylish urban noir aesthetic, dramatic composition, poster-ready artwork.",
+    "instagramUrl": "https: //www.instagram.com/dzine_wala/",
+    "aosDelay": 150
+  },
+  {
+    "id": 3,
+    "title": "Professional Product Ad",
+    "description": "Professional Product Photo",
+    "image": "./images/assets/asset04.png",
+    "prompt": "Create a high-quality professional product photo using the given image of the bottle as the main subject. The photo should look like an advertisement — clean, dynamic, and visually appealing. Place the bottle at the center with realistic lighting, reflections, and soft shadows to make it stand out. The background should have an energetic urban graffiti wall vibe with vibrant spray-paint textures and street-art color splashes (blues, whites, and silvers to evoke freshness). Add stylish typographic graffiti texts integrated naturally into the scene — “Keep the Cool” (bold, large graffiti-style lettering near the top) “Refresh Your Vibe” (smaller, artistic font below or to the side). Optional tag: “#StayChill” near the bottom edge, in a subtle spray-paint effect. Ensure the graffiti typography looks naturally painted on the background wall, not floating. The overall lighting should be bright and crisp, emphasizing the bottle’s condensation, shine, and cool aesthetic. The final image should feel modern, youthful, and energetic, perfect for a beverage or lifestyle ad campaign",
+    "instagramUrl": "https://www.instagram.com/dzine_wala/",
+    "aosDelay": 200
+  },
+  {
+    "id": 4,
+    "title": "Retro Vibes",
+    "description": "Vintage music aesthetic",
+    "image": "./images/assets/asset05.png",
+    "prompt": "Vintage music poster design, retro typography, vinyl records, warm color palette, 70s aesthetic, nostalgic vibe, grain texture",
+    "instagramUrl": "https://www.instagram.com/dzine_wala/",
+    "aosDelay": 300
+  }
+]
