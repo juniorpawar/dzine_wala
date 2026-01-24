@@ -27,6 +27,10 @@
     <!-- CSS Variables for Theming -->
     <link rel="stylesheet" href="./css/themes.css">
 
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <style>
         .bg-texture {
             background: url('./images/colored-surface-with-rough-texture.jpg') repeat;
@@ -38,7 +42,7 @@
 <body class="bg-background text-text-primary antialiased">
 
     <!-- PRELOADER -->
-    <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-background z-50 text-center">
+    <!-- <div id="preloader" class="fixed inset-0 flex flex-col items-center justify-center bg-background z-50 text-center">
         <img src="./images/logo.png" alt="logo-preloader" class="h-24 w-auto rounded-full">
         <p id="loaderText" class="text-orange-500 text-lg font-semibold"></p>
         <div class="mt-3 flex space-x-1">
@@ -46,7 +50,7 @@
             <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
             <div class="h-2 w-2 bg-orange-500 rounded-full animate-bounce"></div>
         </div>
-    </div>
+    </div> -->
 
     <!-- HEADER -->
     <header class="fixed top-0 left-0 w-full z-50">
@@ -95,7 +99,7 @@
 
     <main>
         <!-- HERO SECTION -->
-        <section id="home"
+        <section id="home" data-aos="fade-in"
             class="relative min-h-screen flex items-center justify-center text-center px-6 pt-24 overflow-hidden bg-[var(--bg-color)]">
 
             <div class="back">
@@ -126,7 +130,7 @@
 
 
         <!-- ABOUT SECTION -->
-        <section id="about" class="py-20 md:py-32 fade-in-section">
+        <section id="about" data-aos="zoom-in" class="py-20 md:py-32 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div class="md:h-[80%] bg-border-color rounded-xl flex items-center justify-center shadow-lg">
@@ -195,7 +199,7 @@
 
         <!-- services section -->
 
-        <section id="services" class="py-20 md:px-10 sm:py-28">
+        <section id="services" data-aos="fade-up" class="py-20 md:px-10 sm:py-28">
             <div class="container mx-auto px-6 lg:px-8">
 
                 <div class="text-center max-w-2xl mx-auto mb-12">
@@ -290,7 +294,8 @@
         </section>
 
         <!-- WORK SECTION -->
-        <section id="work" class="py-20 md:py-32 bg-card-bg border-y border-border-color fade-in-section">
+        <section id="work" data-aos="fade-up"
+            class="py-20 md:py-32 bg-card-bg border-y border-border-color fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center">
                     <h2 class="font-heading font-bold text-3xl md:text-4xl">Selected Work</h2>
@@ -337,7 +342,8 @@
         </section>
 
         <!-- AI VIDEO SECTION -->
-        <section id="ai-benefits-pro" class="bg-[var(--bg-color)] text-[var(--text-color)] py-20 sm:py-28">
+        <section id="ai-benefits-pro" data-aos="zoom-in"
+            class="bg-[var(--bg-color)] text-[var(--text-color)] py-20 sm:py-28">
             <div class="container max-w-7xl mx-auto px-6 lg:px-8">
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16 items-center">
@@ -459,8 +465,7 @@
                                         <div class="flex items-end">
                                             <div class="flex-grow">
                                                 <div class="flex items-center gap-2">
-                                                    <img src="https://i.pravatar.cc/150?u=dzineWala"
-                                                        alt="Profile Picture"
+                                                    <img src="./images/logo.png" alt="Profile Picture"
                                                         class="w-8 h-8 rounded-full border-2 border-white">
                                                     <span class="font-bold text-sm">@dzine_wala_</span>
                                                 </div>
@@ -496,7 +501,7 @@
         </section>
 
         <!-- GALLARY SECTION -->
-        <section id="gallary" class="py-20 sm:py-28 bg-gray-200/50 dark:bg-background text-primary">
+        <section id="gallary" data-aos="fade-up" class="py-20 sm:py-28 bg-gray-200/50 dark:bg-background text-primary">
             <div class="container mx-auto px-6 lg:px-8 py-10"
                 style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cpath d='M14 0 L14 28 M0 14 L28 14' stroke='%23818cf8' stroke-width='0.2'/%3E%3C/svg%3E&quot;); background-size: 28px 28px;">
 
@@ -567,7 +572,8 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" class="py-20 md:py-32 bg-card-bg border-t border-border-color fade-in-section">
+        <section id="contact" data-aos="fade-up"
+            class="py-20 md:py-32 bg-card-bg border-t border-border-color fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="font-heading font-bold text-3xl md:text-4xl">Let’s create something unforgettable!</h2>
                 <p class="mt-4 max-w-2xl mx-auto text-text-primary/70">Have a project, a wild idea, or just want to talk
@@ -595,9 +601,9 @@
                     <a href="https://www.instagram.com/dzine_wala/" target="_blank"
                         class="text-text-primary/60 hover:text-accent-primary transition-colors">Instagram<br /><span
                             class="text-secondary">dzine_wal@</span></a>
-                    <a href="mailto:yuvrajsingh3641@gamil.com"
+                    <a href="mailto:yuvrajsingh3641@gmail.com"
                         class="text-text-primary/60 hover:text-accent-primary transition-colors">Email<br /><span
-                            class="text-secondary">yuvrajsingh3641@gamil.com</span></a>
+                            class="text-secondary">yuvrajsingh3641@gmail.com</span></a>
                 </div>
             </div>
         </section>
@@ -615,9 +621,28 @@
         </div>
     </footer>
 
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-accent-primary text-white rounded-full shadow-lg hover:shadow-accent-primary/40 hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none z-50 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- Initialize Lucide (required) -->
     <script>
-        // Initialize Lucide (required)
         lucide.createIcons();
+    </script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            delay: 200,
+            once: false   // animation repeats on scroll
+        });
     </script>
 
     <script src="./js/hamburgerToggle.js"></script>
@@ -626,6 +651,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./js/email.js"></script>
     <script src="./js/preloader.js"></script>
+    <script src="./js/scrollToTop.js"></script>
 </body>
 
 </html>
